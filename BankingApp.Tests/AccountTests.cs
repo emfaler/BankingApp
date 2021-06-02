@@ -18,7 +18,7 @@ namespace BankingApp.Tests
 
 
         [Fact]
-        public void New_Account_Should_Have_Balance_of_25()
+        public void New_Account_Should_Have_Balance_of_100()
         {
 
             //Arrange 
@@ -27,7 +27,7 @@ namespace BankingApp.Tests
             //Act 
 
             //Assert
-            Assert.Equal(25.00, myAccount.Balance);
+            Assert.Equal(100.00, myAccount.Balance);
 
         }
 
