@@ -11,7 +11,7 @@ namespace BankingApp
 
         public Account()
         {
-            Balance = 25;
+            Balance = 100;
         }
         
         
