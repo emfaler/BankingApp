@@ -15,11 +15,6 @@ namespace BankingApp.Tests
         }
 
 
-
-
-
-
-
         [Fact]
         public void New_Savings_Should_Have_Balance_of_200()
         {

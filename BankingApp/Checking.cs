@@ -15,6 +15,16 @@ namespace BankingApp
         {
             MinimumRequiredBalance = 200.00;
             CheckNumber = 1;
+            Balance = 250;
+        }
+
+        public Checking(string nickName, string accountNumber)
+        {
+            MinimumRequiredBalance = 200.00;
+            CheckNumber = 1;
+            Balance = 250;
+            NickName = nickName;
+            AccountNumber = accountNumber;
         }
 
         public void WriteCheck()
