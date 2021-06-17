@@ -11,6 +11,12 @@ namespace BankingApp
             Balance = 200.00;
         }
 
+        public Savings(string nickName, string accountNumber)
+        {
+            Balance = 200.00;
+            NickName = nickName;
+            AccountNumber = accountNumber;
+        }
 
 
 
