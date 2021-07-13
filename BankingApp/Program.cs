@@ -12,13 +12,9 @@ namespace BankingApp
 
             Account myAccount = new Account();
 
-            
-            Checking checkingAccount = new Checking()
-            {
-                AccountNumber = "C12-345",
-                NickName = "First Checking"
-                
-            };
+
+            Checking checkingAccount = new Checking();
+         
 
 
             Console.WriteLine("Welcome to the BankingApp!\n" );
@@ -78,6 +74,11 @@ namespace BankingApp
                     case "6":
                         Console.WriteLine("Thank you for banking with us");
                         keepBanking = false;
+                        break;
+                    case "7":                  
+                        Console.WriteLine("You have written a check");
+                        Console.WriteLine($"You are on check number: {checkingAccount.GetCheckNumber()}");
+                        checkingAccount.WriteCheck();
                         break;
                     default:
                         Console.WriteLine("Invalid Entry");

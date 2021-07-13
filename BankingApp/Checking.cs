@@ -9,6 +9,8 @@ namespace BankingApp
         public double MinimumRequiredBalance { get; set; }
         public int CheckNumber { get; set; }
 
+        
+
 
 
         public Checking()
@@ -30,6 +32,11 @@ namespace BankingApp
         public void WriteCheck()
         {
             CheckNumber++;
+        }
+
+        public int GetCheckNumber()
+        {
+            return CheckNumber;
         }
     }
 }

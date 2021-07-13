@@ -23,7 +23,7 @@ namespace BankingApp
             Console.WriteLine("Please select an account from the list:");
             foreach (Account account in ListofAccounts)
             {
-                Console.WriteLine($"{index}. {account.AccountNumber} {account.NickName}");
+                Console.WriteLine($"{index}.  {account.NickName} Account Number: {account.AccountNumber}");
                 index++;
             }
 
