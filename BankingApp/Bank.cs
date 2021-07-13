@@ -17,7 +17,7 @@ namespace BankingApp
 
         public Account SelectAccount()
         {
-
+            
             int index = 1;
 
             Console.WriteLine("Please select an account from the list:");
@@ -26,6 +26,8 @@ namespace BankingApp
                 Console.WriteLine($"{index}.  {account.NickName} Account Number: {account.AccountNumber}");
                 index++;
             }
+
+            
 
             int indexSelected = Convert.ToInt32(Console.ReadLine());
 

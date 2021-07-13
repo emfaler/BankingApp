@@ -32,6 +32,7 @@ namespace BankingApp
                 Console.WriteLine("4: Withdraw $10");
                 Console.WriteLine("5: Deposit $50");
                 Console.WriteLine("6: Exit");
+                Console.WriteLine("7: Write a Check");
 
                 string accountChoice = Console.ReadLine();
 
