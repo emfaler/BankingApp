@@ -73,6 +73,7 @@ namespace BankingApp
                         Console.WriteLine($"You deposited $50");
                         break;
                     case "6":
+                        myAccount = myBank.SelectAccount();
                         Console.WriteLine("You have written a check");
                         Console.WriteLine($"You are on check number: {checkingAccount.GetCheckNumber()}");
                         checkingAccount.WriteCheck();
