@@ -31,8 +31,9 @@ namespace BankingApp
                 Console.WriteLine("3: Check Account Balance");
                 Console.WriteLine("4: Withdraw $10");
                 Console.WriteLine("5: Deposit $50");
-                Console.WriteLine("6: Exit");
-                Console.WriteLine("7: Write a Check");
+                Console.WriteLine("6: Write a Check");
+                Console.WriteLine("7: Exit");
+                
 
                 string accountChoice = Console.ReadLine();
 
@@ -71,16 +72,17 @@ namespace BankingApp
                         myAccount.Deposit();
                         Console.WriteLine($"You deposited $50");
                         break;
-                    
                     case "6":
-                        Console.WriteLine("Thank you for banking with us");
-                        keepBanking = false;
-                        break;
-                    case "7":                  
                         Console.WriteLine("You have written a check");
                         Console.WriteLine($"You are on check number: {checkingAccount.GetCheckNumber()}");
                         checkingAccount.WriteCheck();
                         break;
+
+                    case "7":
+                        Console.WriteLine("Thank you for banking with us");
+                        keepBanking = false;
+                        break;
+                    
                     default:
                         Console.WriteLine("Invalid Entry");
                         break;
